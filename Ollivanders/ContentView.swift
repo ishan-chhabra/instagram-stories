@@ -14,10 +14,15 @@ fileprivate let wands: [Wand] = [
 ]
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+    
+  var body: some View {
+    NavigationView {
+        List(wands, id: \.name){ wand in
+          Text(wand.name)
+        }
+        .navigationBarTitle(Text("Ollivanders"), displayMode: .inline)
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
