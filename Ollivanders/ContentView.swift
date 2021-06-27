@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+fileprivate let wands: [Wand] = [
+  Wand(name: "Dumbledore's Wand", stickerAsset: "dumbledore"),
+  Wand(name: "Potter's Wand", stickerAsset: "potter"),
+  Wand(name: "Granger's Wand", stickerAsset: "granger")
+]
+
 struct ContentView: View {
     var body: some View {
         Text("Hello, world!")
