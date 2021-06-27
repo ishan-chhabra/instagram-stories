@@ -8,6 +8,6 @@
 import Foundation
 
 struct Wand {
-  let name: String
-  let stickerAsset: String
+    let name: String
+    let stickerAsset: String
 }
